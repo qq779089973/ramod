@@ -462,7 +462,12 @@ $(eval $(call application,aria2,LuCI Support for aria2,\
 	+PACKAGE_luci-app-aria2:curl \
 	+PACKAGE_luci-app-aria2:wget \
 	+PACKAGE_luci-app-aria2:openssl-util))
-
+	
+$(eval $(call application,macvlan-multiwan,LuCI Support for macvlan with multiwan,\
+	+PACKAGE_luci-app-macvlan-multiwan:kmod-macvlan +PACKAGE_luci-app-macvlan-multiwan:luci-app-multiwan))
+$(eval $(call application,macvlan,LuCI Support for macvlan,\
+	+PACKAGE_luci-app-macvlan:kmod-macvlan +PACKAGE_luci-app-macvlan:luci-app-mwan3))
+	
 $(eval $(call application,shadowsocks,LuCI Support for shadowsocks,\
 	+PACKAGE_luci-app-shadowsocks:shadowsocks-libev \
 	+PACKAGE_luci-app-shadowsocks:kmod-ipt-nat \
