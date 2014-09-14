@@ -52,9 +52,6 @@ config tinyproxy
 config 6relayd
 	option init 6relayd
 
-config aria2
-	option init aria2
-
 config shadowsocks
 	option init shadowsocks
 

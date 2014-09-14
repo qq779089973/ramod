@@ -456,12 +456,6 @@ $(eval $(call application,transmission,LuCI Support for Transmission,\
 
 $(eval $(call application,watchcat,LuCI Support for Watchcat,\
 	+PACKAGE_luci-app-watchcat:watchcat))
-
-$(eval $(call application,aria2,LuCI Support for aria2,\
-	+PACKAGE_luci-app-aria2:aria2 \
-	+PACKAGE_luci-app-aria2:curl \
-	+PACKAGE_luci-app-aria2:wget \
-	+PACKAGE_luci-app-aria2:openssl-util))
 	
 $(eval $(call application,macvlan-multiwan,LuCI Support for macvlan with multiwan,\
 	+PACKAGE_luci-app-macvlan-multiwan:kmod-macvlan +PACKAGE_luci-app-macvlan-multiwan:luci-app-multiwan))
